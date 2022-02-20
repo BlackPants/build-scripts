@@ -1,5 +1,5 @@
 # Build machines are Debian Buster with GLIBC 2.28.
-FROM ubuntu:18.04
+FROM debian:buster
 RUN apt-get update && \
     apt-get install -y gcc gcc-multilib g++ g++-multilib ninja-build python3 python3-distutils git zlib1g-dev ccache
 
