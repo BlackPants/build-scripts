@@ -1,5 +1,5 @@
-# Build machines are Debian Buster with GLIBC 2.28.
-FROM gcc:10.3.0-buster
+# Build machines are Debian Buster with GLIBC 2.28 and GLIBCXX 3.4.25
+FROM gcc:9.4-buster
 RUN apt-get update && \
     apt-get install -y ninja-build lld python3 python3-distutils git zlib1g-dev ccache
 
